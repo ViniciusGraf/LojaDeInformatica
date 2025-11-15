@@ -1,11 +1,12 @@
 package model;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class UsoInterno extends SaidaProduto{
 
     private String destino;
-    public UsoInterno(float valorUnitario, Date data, int qtd, Produto produto, String destino) {
+    public UsoInterno(float valorUnitario, LocalDateTime data, int qtd, Produto produto, String destino) {
         super(valorUnitario, data, qtd, produto);
         this.destino = destino;
     }
