@@ -1,4 +1,4 @@
 package model;
 
-public abstract class SaidaProduto {
+public abstract class SaidaProduto extends MovimentoEstoque implements Movimentavel {
 }
