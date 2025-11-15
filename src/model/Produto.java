@@ -11,6 +11,9 @@ public class Produto {
     private Categoria categoria;
 
     public Produto(String nome, float valorUnitario, int qtdEstoque, Categoria categoria) {
+        if (valorUnitario < 0) throw new IllegalArgumentException("Valor não pode ser negativo");
+        if (qtdEstoque < 0) throw new IllegalArgumentException("Estoque não pode ser negativo");
+
         this.id = ++contador;
         this.nome = nome;
         this.valorUnitario = valorUnitario;
@@ -25,9 +28,10 @@ public class Produto {
     }
 
     public void diminuirEstoque(int qtd) {
-        if (qtd > 0) {
-            this.qtdEstoque -= qtd;
+        if (qtd > qtdEstoque) {
+            throw new IllegalArgumentException("Quantidade insuficiente em estoque.");
         }
+        this.qtdEstoque -= qtd;
     }
 
     public int getQtdEstoque() {
