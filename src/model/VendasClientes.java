@@ -13,4 +13,17 @@ public class VendasClientes extends SaidaProduto{
     public Cliente getCliente() {
         return cliente;
     }
+
+    @Override
+    public String getTipoSaida() {
+        return "Venda";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nCliente: " + cliente.getNome() +
+                "\nEndereco: " + cliente.getEndereco();
+
+    }
 }

@@ -14,4 +14,15 @@ public class OutrasSaidas extends SaidaProduto{
     public String getOutraSaida() {
         return outraSaida;
     }
+
+    @Override
+    public String getTipoSaida() {
+        return "Outra Saida";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Outra Saida: " + outraSaida;
+    }
 }

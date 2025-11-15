@@ -11,6 +11,19 @@ public abstract class SaidaProduto extends MovimentoEstoque implements Movimenta
 
     @Override
     public void aplicarMovimento() {
-        getProduto().aumentarEstoque(getQtd());
+        getProduto().diminuirEstoque(getQtd());
     }
+
+    public String getTipoSaida(){return null;}
+
+    @Override
+    public String toString() {
+        return "\n== Saida de Produto ==" +
+                "\nTipo: " + getTipoSaida() +
+                "\nProduto: " + getProduto().getNome() +
+                "\nQuantidade: " + getQtd();
+
+    }
+
+
 }

@@ -14,4 +14,15 @@ public class UsoInterno extends SaidaProduto{
     public String getDestino() {
         return destino;
     }
+
+    @Override
+    public String getTipoSaida() {
+        return "Uso Interno";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nDestino: " + destino;
+    }
 }

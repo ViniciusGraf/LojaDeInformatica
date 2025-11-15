@@ -14,4 +14,17 @@ public class DevolucaoFornecedores extends SaidaProduto{
     public Fornecedor getFornecedor() {
         return fornecedor;
     }
+
+    @Override
+    public String getTipoSaida() {
+        return "Devolucao Fornecedore";
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nFornecedor: " + fornecedor.getNome() +
+                "\nEndereco: " + fornecedor.getEndereco();
+
+    }
 }
