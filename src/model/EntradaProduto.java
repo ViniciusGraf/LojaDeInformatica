@@ -4,13 +4,18 @@ import java.util.Date;
 
 public class EntradaProduto  extends MovimentoEstoque implements Movimentavel {
 
-
-    public EntradaProduto(float valorUnitario, Date data, int qtd,Produto produto) {
+    private Fornecedor fornecedor;
+    public EntradaProduto(float valorUnitario, Date data, int qtd,Produto produto, Fornecedor fornecedor) {
         super(valorUnitario, data, qtd, produto);
+        this.fornecedor = fornecedor;
     }
 
     @Override
     public void aplicarMovimento() {
         getProduto().aumentarEstoque(getQtd());
+    }
+
+    public Fornecedor getFornecedor() {
+        return fornecedor;
     }
 }

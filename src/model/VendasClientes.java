@@ -10,11 +10,6 @@ public class VendasClientes extends SaidaProduto{
         this.cliente = cliente;
     }
 
-    @Override
-    public void aplicarMovimento() {
-        getProduto().aumentarEstoque(getQtd());
-    }
-
     public Cliente getCliente() {
         return cliente;
     }

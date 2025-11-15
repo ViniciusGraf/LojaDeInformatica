@@ -1,7 +1,6 @@
 package model;
 
 public class Produto {
-    // teste
 
     private static int contador = 0;
 
