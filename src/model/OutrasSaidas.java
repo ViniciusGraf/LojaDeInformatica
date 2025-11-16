@@ -22,6 +22,6 @@ public class OutrasSaidas extends SaidaProduto{
     @Override
     public String toString() {
         return super.toString() +
-                "Outra Saida: " + outraSaida;
+                "\nOutra Saida: " + outraSaida;
     }
 }
