@@ -1,7 +1,6 @@
 package model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public abstract class MovimentoEstoque{
     private float valorUnitario;
