@@ -2,11 +2,11 @@ package model;
 
 import java.time.LocalDateTime;
 
-public abstract class MovimentoEstoque{
-    private float valorUnitario;
-    private LocalDateTime data;
-    private int qtd;
-    private Produto produto;
+public abstract class MovimentoEstoque implements Movimentavel {
+    protected float valorUnitario;
+    protected LocalDateTime data;
+    protected int qtd;
+    protected Produto produto;
 
     public MovimentoEstoque(float valorUnitario, LocalDateTime data, int qtd, Produto produto) {
         this.valorUnitario = valorUnitario;

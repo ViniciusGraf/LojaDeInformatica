@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
-public abstract class SaidaProduto extends MovimentoEstoque implements Movimentavel {
+public abstract class SaidaProduto extends MovimentoEstoque{
 
     public SaidaProduto(float valorUnitario, LocalDateTime data, int qtd, Produto produto) {
         super(valorUnitario, data, qtd, produto);

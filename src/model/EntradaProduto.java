@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDateTime;
 
-public class EntradaProduto  extends MovimentoEstoque implements Movimentavel {
+public class EntradaProduto  extends MovimentoEstoque{
 
     private Fornecedor fornecedor;
     public EntradaProduto(float valorUnitario, LocalDateTime data, int qtd, Produto produto, Fornecedor fornecedor) {
